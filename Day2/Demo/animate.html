@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate Effect</title>
+    <style>
+        img{position: absolute;}
+        #img1{top:10px;}
+        #img2{top:210px;}
+        #img3{top:410px;}
+    </style>
+      
+      <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(function(){
+            $("#img1").animate({left:"+=500px"},5000,"linear");
+            $("#img2").animate({left:"+=500px"},5000,"swing");
+
+            
+        $('#img3').animate({ left: '+=50' },
+        {
+           step: function(now, fx) {
+           console.log("now",now);
+           console.log("fx",fx);
+                             
+         }
+
+})
+
+        })
+         
+
+;
+
+    </script>
+  
+</head>
+
+<body>
+    <img src="12.gif" id="img1"/>
+    <img src="12.gif" id="img2"/>
+    <img src="12.gif" id="img3"/>
+
+</body>
+</html>

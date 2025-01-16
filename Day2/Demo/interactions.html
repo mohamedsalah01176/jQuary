@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accordion Example</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+</head>
+<body>
+   <img src="dd.png"/>
+  <button id="explode">Explode</button>
+  <script>       
+    
+      $(function() {
+           $("#explode").click(function(){
+              $("img").hide("bounce", 1000);
+           })
+        });
+      
+  </script>
+
+
+    <!-- <div id="draggable" style="width:100px; height:100px; background-color:lightblue;">
+        Drag me!
+      </div>
+      
+      <script>
+        $(function() {
+          $("#draggable").draggable();
+        });
+      </> -->
+
+
+      <div id="draggable" style="width:100px; height:100px; background-color:red;">
+        Drag me!
+      </div>
+
+      <div id="droppable" style="width:150px; height:150px; background-color:lightgreen; margin-top:20px;">
+        Drop here
+      </div>
+      <script>
+       
+
+        $(function() {
+
+          $("#draggable").draggable();
+          $("#droppable").droppable({
+
+            drop: function(event, ui) {
+
+                $(this).text("Dropped!");
+                console.log("Event",event);
+                console.log("uiiii", ui);
+            }
+          });
+        });
+      </script> 
+
+      
+
+      <!-- <ul id="sortable" style="list-style:none; padding:0;">
+        <li style="margin:5px; padding:10px; background-color:lightgrey;">Item 1</li>
+        <li style="margin:5px; padding:10px; background-color:lightgrey;">Item 2</li>
+        <li style="margin:5px; padding:10px; background-color:lightgrey;">Item 3</li>
+      </ul>
+      
+      <script>
+        $(function() {
+          $("#sortable").sortable();
+        });
+      </script> -->
+
+
+
+
+
+      <!-- <ol id="selectable">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ol>
+      
+      <script>
+        $(function() {
+          $("#selectable").selectable();
+        });
+      </script>
+       -->
+
+
+
+
+       <!-- <div id="resizable" style="width:150px; height:150px; background-color:lightcoral;">
+        Resize me!
+      </div>
+      
+      <script>
+        $(function() {
+          $("#resizable").resizable();
+        });
+      </script> -->
+      
+      
+      
+      
+</body>

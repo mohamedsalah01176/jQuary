@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    color:white;
+    font-size: 19px;
+}
+body{
+    padding: 10px;
+}
+#start,#nextStart{
+    padding: 10px 15px;
+    background-color: green;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+#return{
+    padding: 10px 15px;
+    background-color: blue;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#imagTask2{
+    position: absolute;
+    left: 0;
+    width: 100px;
+    top:50px ;
+    transform: rotate(0deg);
+    transform: scale(1);
+    transition: "all 2s", 
+}
+
+#cricle{
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#dra{
+    background-color: red;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}

@@ -1,0 +1,160 @@
+
+
+body{
+    background: linear-gradient(to right,rgb(5, 5, 86),blue,rgb(5, 5, 86));
+    height: 90vh;
+    padding: 50px 0 ;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 20vh;
+    gap: 10px;
+}
+.btns button{
+    padding: 7px 13px;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    border: none;
+    transition: .5s;
+    background: linear-gradient(to right,rgb(5, 5, 86),blue,rgb(5, 5, 86));
+}
+.btns button:hover{
+    background: linear-gradient(to right,blue,rgb(5, 5, 86),blue);
+}
+
+.maincon{
+    margin-top: 50px;
+    text-align: center;
+    min-height: 40vh;
+    
+}
+.maincon .aboutCon{
+    min-width: 500px;
+    padding: 10px 20px;
+    box-shadow: 15px 15px 50px black;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    display: none;
+}
+
+.maincon .galleryCon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;   
+    /* min-width: 500px;*/
+    display: none;
+
+}
+.maincon .galleryCon .right, .maincon .galleryCon .left{
+    width: 50px;
+}
+.maincon .galleryCon .mainImage{
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+}
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: start;
+    justify-content: start;
+}
+.dropdown .service1,.dropdown .service2,.dropdown .service3{
+    display: none;
+    color: white;
+    background-color: blue;
+    padding: 15px;
+    margin: 0px;
+}
+
+.mainComplainCon{
+    display: none;
+}
+form{
+    background-color: white;
+    min-width: 400px;
+    min-height: 60vh;
+    border-radius: 10px;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+form input{
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid blue;
+    width: 80%;
+    font-size: 19px;
+}
+form input::placeholder{
+    font-size: 19px;
+    /* color: black; */
+}
+form .complainCon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form .complainCon h3{
+    margin: 10px 0 5px;
+    font-size: 20px;
+}
+
+form .submit ,.conText .back{
+    background-color: rgb(2, 2, 201) !important;
+    color: white;
+    font-size: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    border:  1px solid wheat;
+    cursor: pointer;
+    transition: .5s;
+}
+form .submit:hover,.conText .back:hover{
+    background-color: white !important;
+    color: blue;
+    border:  1px solid blue;
+}
+.conText {
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    min-width: 320px;
+    min-height: 350px;
+    padding: 10px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.conText h2{
+    font-size: 23px;
+    font-weight:normal;
+
+}
+.conText span{
+    color: blue;
+    font-size: 25px; 
+    font-weight:bold;
+    font-style: italic;
+}
+textarea{
+    font-size: 18px;
+    border: none;
+    border: 2px dashed blue;
+}
